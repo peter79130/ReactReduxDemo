@@ -1,0 +1,46 @@
+{
+  "name": "demo",
+  "version": "1.0.0",
+  "description": "Simple demo starter for Redux with React and Babel support",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/peter79130/ReactReduxDemo.git"
+  },
+  "scripts": {
+    "clean": "rimraf dist",
+    "build": "npm run clean && webpack -p",
+    "start": "webpack-dev-server"
+  },
+  "author": "Peter Fu",
+  "license": "MIT",
+  "dependencies": {
+    "lodash": "^4.17.2",
+    "react": "^15.4.1",
+    "react-dom": "^15.4.1",
+    "react-redux": "^4.4.6",
+    "react-router": "^3.0.0",
+    "redux": "^3.6.0",
+    "redux-form": "^6.3.2",
+    "redux-promise": "^0.5.3",
+    "redux-thunk": "^2.1.0"
+  },
+  "devDependencies": {
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.0",
+    "babel-preset-env": "^1.1.4",
+    "babel-preset-react": "^6.16.0",
+    "css-loader": "^0.26.1",
+    "extract-text-webpack-plugin": "^2.0.0-beta.4",
+    "html-webpack-plugin": "^2.26.0",
+    "jquery": "^2.2.1",
+    "jsdom": "^8.1.0",
+    "node-sass": "^4.3.0",
+    "react-addons-test-utils": "^0.14.7",
+    "rimraf": "^2.5.4",
+    "sass-loader": "^4.1.1",
+    "style-loader": "^0.13.1",
+    "webpack": "^2.2.0-rc.0",
+    "webpack-dev-server": "^2.2.0-rc.0"
+  }
+}
