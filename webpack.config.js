@@ -8,6 +8,7 @@ const VENDOR_LIBS = [
 ];
 
 const config = {
+  devtool: 'source-map',
   entry: {
     bundle: './src/index.js',
     vendor: VENDOR_LIBS
@@ -41,11 +42,12 @@ const config = {
     new webpack.NoErrorsPlugin(),
     new HtmlWebpackPlugin({
       template: 'src/index.html'
-    }),
-    new webpack.optimize.UglifyJsPlugin({
-      comments: false,
-      compress: { warnings: false }
     })
+    // Production only
+    // new webpack.optimize.UglifyJsPlugin({
+    //   comments: false,
+    //   compress: { warnings: false }
+    // })
   ]
 };
 
