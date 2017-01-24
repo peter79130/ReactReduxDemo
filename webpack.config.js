@@ -15,7 +15,7 @@ const config = {
   output: {
     path: path.join(__dirname, 'dist'),
     filename: '[name].[chunkhash].js',
-    publicPath: 'dist/'
+    publicPath: ''
   },
   module: {
     loaders: [
@@ -41,6 +41,10 @@ const config = {
     new webpack.NoErrorsPlugin(),
     new HtmlWebpackPlugin({
       template: 'src/index.html'
+    }),
+    new webpack.optimize.UglifyJsPlugin({
+      comments: false,
+      compress: { warnings: false }
     })
   ]
 };
