@@ -39,7 +39,7 @@ const config = {
     new webpack.optimize.CommonsChunkPlugin({
       names: ['vendor','manifest']
     }),
-    new webpack.NoErrorsPlugin(),
+    new webpack.NoEmitOnErrorsPlugin(),
     new HtmlWebpackPlugin({
       template: 'src/index.html'
     })
