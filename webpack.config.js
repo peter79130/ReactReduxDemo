@@ -43,7 +43,7 @@ const config = {
     new HtmlWebpackPlugin({
       template: 'src/index.html'
     })
-    // Production only
+    // Production only !
     // new webpack.optimize.UglifyJsPlugin({
     //   comments: false,
     //   compress: { warnings: false }
